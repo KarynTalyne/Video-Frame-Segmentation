@@ -9,24 +9,24 @@ Utilizando as bibliotecas disponíveis para Python , moviepy e Pillow, é extra�
 
 :floppy_disk: Arquivos necessários
 
-Para executar este projeto é necessário utilizar um vídeo em formato .mp4, anexando à pasta raiz do projeto. O vídeo bigbuckbunny.mp4 está disponível para ser usad de teste no arquivo bigbuckbunny.zip .
+Para executar este projeto é necessário utilizar um vídeo em formato .mp4, anexando à pasta raiz do projeto. O vídeo bigbuckbunny.mp4 está disponível para ser usado de teste no arquivo bigbuckbunny.zip .
 
 :clipboard: Documentação:
 
-#Numpy:
+:triangular_ruler:Numpy:
 https://numpy.org/doc/stable/reference/generated/numpy.unravel_index.html
 
 https://numpy.org/
 
 https://numpy.org/doc/stable/reference/generated/numpy.argmax.html
 
-#Moviepy:
+:movie_camera:Moviepy:
 https://pypi.org/project/moviepy/
 
-#Matplotlib:
+:bar_chart:Matplotlib:
 https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.html
 
-#Pillow:
+:art:Pillow:
 https://pypi.org/project/Pillow/
 
 
