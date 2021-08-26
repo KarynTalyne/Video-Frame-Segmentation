@@ -125,3 +125,4 @@ plt.imshow(entry)
 print('2-Imagem processada:\n')
 plt.subplot(2, 1, 2)
 plt.imshow(out, cmap="gray")
+
