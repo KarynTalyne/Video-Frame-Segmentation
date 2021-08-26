@@ -1,9 +1,9 @@
 import moviepy.editor as mpe
 import matplotlib.pyplot as plt
 import numpy as np
-from PIL import Image
 
-# a biblioteca moviepy,pode ser instalada através do comando pip install moviepy no prompt de comando ou Anaconda Prompt
+
+# A biblioteca moviepy,pode ser instalada através do comando pip install moviepy no prompt de comando ou Anaconda Prompt
 
 
 def max_index_fast(array):  # função que localiza o nível de cinza correspondente ao maior pico do histograma
@@ -70,14 +70,14 @@ def Open_and_informer(name):  # função de interface,obtêm as informações do
     video = mpe.VideoFileClip(name)  # Abre o vídeo submetido
     d = video.duration  # Obtêm a duração do vídeo
 
-    return (d, video)  # retorna a duração e o vídeo
+    return d, video  # retorna a duração e o vídeo
 
 
 def Extract(video, time):  # função que extrai o frame do vídeo
     img_in = video.get_frame(time)[:, :, :3]  # a imagem referente ao segundo(tempo) escolhido é extraída
     img_out = histogram_analysis(img_in)  # a imagem é enviada para a análise do histograma
 
-    return (img_out, img_in)  # A imagem original e a imagem processada são retornadas
+    return img_out, img_in  # A imagem original e a imagem processada são retornadas
 
 
 '''
@@ -104,7 +104,7 @@ plt.imshow(out,cmap="gray")
 '''
 # teste feito com o vídeo bigbuckbunny.mp4
 
-print(('Qual o nome do vídeo a ser acessado?\n\n'))
+print('Qual o nome do vídeo a ser acessado?\n\n')
 # abrindo um vídeo de 5 segundos
 name = "bigbuckbunny.mp4"
 (resp1, v) = Open_and_informer(name)
@@ -113,7 +113,10 @@ print('A duração do vídeo é de', resp1, 'segundos\n')
 time = 4
 print('\n')
 # Chamando a função que inicia a segmentação
-(out, entry) = Extract(v,time)  # é chamada a função de extração e a segmentação é iniciada,e é retornada a imagem processada
+'''
+É chamada a função de extração e a segmentação é iniciada,e é retornada a imagem processada
+'''
+(out, entry) = Extract(v, time)
 # Mostrando os resultados
 plt.figure(figsize=(8, 8))
 plt.subplot(2, 1, 1)
@@ -122,5 +125,3 @@ plt.imshow(entry)
 print('2-Imagem processada:\n')
 plt.subplot(2, 1, 2)
 plt.imshow(out, cmap="gray")
-
-
