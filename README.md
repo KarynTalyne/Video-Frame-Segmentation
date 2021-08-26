@@ -4,6 +4,7 @@
 
 
 :question: Como Funciona?
+
 Utilizando as bibliotecas disponíveis para Python , moviepy e Pillow, é extraído um frame específico de um vídeo. Esta imagem(frame) passa por uma função que constrói seu histograma analisando a intensidade de seus pixels, logo após isso outra função analisa qual é o valor máximo de intensidade dos pixels e o envia para a função que definitivamente realiza a segmentação. Utilizando este valor máximo, a função de segmentação compara todos os pixels da imagem a ele: se o valor do pixel for maior, recebe 255(Branco), se for menor recebe 0(Preto); desta forma a imagem proveniente do frame é transformada em uma imagem binária, utilizando o histograma.
 
 :exclamation: Importante: Este projeto adota o padrão RGB.
