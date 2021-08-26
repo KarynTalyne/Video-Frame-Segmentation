@@ -14,6 +14,7 @@ Para executar este projeto é necessário utilizar um vídeo em formato .mp4, an
 :clipboard: Documentação:
 
 :triangular_ruler:Numpy:
+
 https://numpy.org/doc/stable/reference/generated/numpy.unravel_index.html
 
 https://numpy.org/
